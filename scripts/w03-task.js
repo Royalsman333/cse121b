@@ -44,12 +44,12 @@ const divideNumbers = () => {
 document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
 
 /* Decision Structure */
-document.querySelector('#getTotalDue').addEventListener('click', function() {
+document.querySelector('#getTotal').addEventListener('click', function() {
     let subtotal = Number(document.querySelector('#subtotal').value);
-    let membershipCheckbox = document.querySelector('#membershipCheckbox');
-    let discount = membershipCheckbox.checked ? 0.2 : 0;
+    let membershipCheckbox = document.querySelector('#member');
+    let discount = membershipCheckbox && membershipCheckbox.checked ? 0.2 : 0;
     let total = subtotal - (subtotal * discount);
-    document.querySelector('#total').textContent = `Total Due: $${total.toFixed(2)}`;
+    document.querySelector('#total').textContent = `$${total.toFixed(2)}`;
 });
 
 /* ARRAY METHODS - Functional Programming */
