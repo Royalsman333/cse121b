@@ -46,7 +46,7 @@ switch (filter){
         displayTemples(temples.filter(temple => temple.location.includes('Utah')));
         break;
     case 'nonutah':
-        displayTemples(temples.filter(temple => !temple.location.includes('Utah')));
+        displayTemples(temples.filter(temple => !\bUtah\b/i.test(temple.location)));
         break;
     case 'older':
         displayTemples(temples.filter(temple => new Date(temple.dedicatedDate) < new Date(1950, 0, 1)));
