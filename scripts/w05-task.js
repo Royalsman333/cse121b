@@ -45,16 +45,9 @@ switch (filter){
     case 'utah':
         displayTemples(temples.filter(temple => temple.location.includes('Utah')));
         break;
-    case 'nonutah':
-        console.log("Non-Utah Temples:")
-        displayTemples(temples.filter(temple => {
-            const match = !/\bUtah\b/i.test(temple.location);
-        if (match) {
-            console.log(temple.location);
-        }
-        return match;
-    }));
-    break;
+    case 'notutah':
+        displayTemples(temples.filter(temple => !temple.location.includes('Utah')));
+        break;
     case 'older':
         displayTemples(temples.filter(temple => new Date(temple.dedicatedDate) < new Date(1950, 0, 1)));
         break;
