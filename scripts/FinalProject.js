@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <strong>Email:</strong> ${user.email} <br>
                     <strong>Phone:</strong> ${user.phone}
                 `;
-                usersList.appendChile(li);
+                usersList.appendChild(li);
             });
         })
         .catch(error => console.log("Error fetching data:", error));
