@@ -34,3 +34,6 @@ strong {
     color: #007bff;
 }
 
+li > div {
+    margin-bottom: 5px;
+}
