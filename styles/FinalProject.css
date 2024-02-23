@@ -1,4 +1,4 @@
-
+/* This css code helps me set the spacing that I want */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,6 +12,7 @@ body {
     padding: 0 20px;
 }
 
+/* This controls that the header is centered */
 h1 {
     text-align: center;
     color: #333;
@@ -22,6 +23,7 @@ ul {
     padding: 0;
 }
 
+/*This is what sets up each of the groups that are made in the Users List (in the Javascript) This makes it look nice */
 li {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -30,10 +32,12 @@ li {
     background-color: #fff;
 }
 
+/*This makes it so that my <strong> code in JS turns blue. it makes it stand out more */
 strong {
     color: #007bff;
 }
 
+/*This is what divides the groups in the Users List, it looked pretty ugly all bunched up together */
 li > div {
     margin-bottom: 5px;
 }
